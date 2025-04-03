@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(22, 22, 22);
+}
+.headerBox{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px green solid;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    background-image: url("img/scanlines.png");
+    background-color: rgb(83, 83, 83);
+}
+
+.contentBox {
+    border: 3px green solid;
+    max-width: 70%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+
+#maintitle {
+    font-size: 40px;
+    color: rgb(27, 88, 27);
+    -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.438);
+}
+
+#subtitle {
+    font-style: italic;
+    font-size: 22px;
+    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.438);
+    color: rgb(48, 133, 48);
+}
