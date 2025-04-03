@@ -1,20 +1,73 @@
+a {
+    color: green;
+}
+
+a:hover {
+    color: rgb(53, 168, 53);
+}
+
+a:active {
+    color: rgb(33, 92, 33);
+}
+
 body {
     background-color: rgb(22, 22, 22);
 }
 .headerBox{
+    justify-self: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 3px green solid;
+    border-left: 3px green solid;
+    border-right: 3px green solid;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    background: url("img/static2.gif");
+    background-size: 510px 160px;
+    background-color: rgb(83, 83, 83);
+    user-select: none;
+}
+
+#navbar {
+    justify-self: center;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
     padding-left: 5px;
     padding-right: 5px;
     border: 3px green solid;
     text-align: center;
     width: 500px;
-    height: 150px;
     background-image: url("img/scanlines.png");
     background-color: rgb(83, 83, 83);
 }
 
+.navbtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 750;
+    -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.438);
+    color: rgb(48, 133, 48);
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 750;
+    -webkit-text-stroke: 0.4px rgba(153, 153, 153, 0.438);
+    color: rgb(79, 160, 79);
+    user-select: none;
+    cursor: pointer;
+}
+
 .contentBox {
+    justify-self: center;
     border: 3px green solid;
-    max-width: 70%;
+    max-width: 55%;
     padding-left: 5px;
     padding-right: 5px;
     color: white;
@@ -22,14 +75,19 @@ body {
 }
 
 #maintitle {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
-    color: rgb(27, 88, 27);
-    -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.438);
+    color: rgb(38, 112, 38);
+    text-shadow: 4px 4px black;
+    -webkit-text-stroke: 3px rgba(29, 29, 29, 0.233);
+    user-select: none;
 }
 
 #subtitle {
-    font-style: italic;
-    font-size: 22px;
-    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.438);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.438);
     color: rgb(48, 133, 48);
+    user-select: none;
 }
