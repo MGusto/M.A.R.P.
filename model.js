@@ -27,7 +27,7 @@ const model = {
     <li>HUH?!</li>
     <li><a href="https://www.moddb.com/mods/stalker-anomaly" target="_blank">S.T.A.L.K.E.R. Anomaly</a></li>
     <li><a href="https://github.com/Grokitach/Stalker_GAMMA" target="_blank">S.T.A.L.K.E.R. GAMMA mod-pack for Anomaly</a></li>
-    <li>Original S.T.A.L.K.E.R. Trilogy<a href="https://store.steampowered.com/sub/35983/" target="_blank">on Steam</a> and <a href="www.gog.com/en/games?query=S.T.A.L.K.E.R." target="_blank">on GOG</a></li>
+    <li>Original S.T.A.L.K.E.R. Trilogy <a href="https://store.steampowered.com/sub/35983/" target="_blank">on Steam</a> and <a href="www.gog.com/en/games?query=S.T.A.L.K.E.R." target="_blank">on GOG</a></li>
 </ol>
     </div>`},
         ]
