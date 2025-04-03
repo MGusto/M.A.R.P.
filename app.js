@@ -9,7 +9,7 @@ function show() {
             <div id="navbar"><button id="introbtn" class="navbtn">Intro</button><button id="namegenbtn" class="navbtn">Name & Faction</button><button id="hideoutbtn" class="navbtn">Hideouts</button><button id="aboutbtn" class="navbtn">About</button></div>
             <br>
             <div class="contentBox">
-                <p>This is a little project I'm building relating to <a href="https://www.moddb.com/mods/stalker-anomaly">S.T.A.L.K.E.R. Anomaly</a> and the mod-packs that run on top of it. The intent is to make a web-based tool that can be used by players to make certain decisions for them, either for the sake of inspiration or for challenge-runs and that sort of thing.</p>
+                <p>This is a little project I'm building relating to <a href="https://www.moddb.com/mods/stalker-anomaly" target="_blank">S.T.A.L.K.E.R. Anomaly</a> and the mod-packs that run on top of it. The intent is to make a web-based tool that can be used by players to make certain decisions for them, either for the sake of inspiration or for challenge-runs and that sort of thing.</p>
                 </div>`;
     app.innerHTML = html;
 }
