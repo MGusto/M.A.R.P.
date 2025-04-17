@@ -1,19 +1,19 @@
-a {
+.hyperlink {
     color: green;
 }
 
-a:hover {
+.hyperlink:hover {
     color: rgb(53, 168, 53);
 }
 
-a:active {
+.hyperlink:active {
     color: rgb(33, 92, 33);
 }
 
 body {
     background-color: rgb(22, 22, 22);
 }
-.headerBox{
+.headerBox {
     justify-self: center;
     padding-left: 5px;
     padding-right: 5px;
@@ -90,4 +90,94 @@ body {
     -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.438);
     color: rgb(48, 133, 48);
     user-select: none;
+}
+
+#factionbox {
+    display: flex;
+}
+
+.factionchoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceImg {
+    position: relative;
+    max-width: 100px;
+    max-height: 120px;
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    user-select: none;
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0) solid;
+}
+
+.choiceImg:hover{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+}
+
+.choiceImg:active {
+    opacity: 1;
+    border: 1px rgba(255, 255, 255, 0.514) solid;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin:auto;
+}
+
+.imgDesc {
+    opacity: 1;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.164);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgb(55, 182, 55);
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+
+
+#genderChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    padding: 2px;
+}
+
+.generalBtn {
+    background-color: rgba(36, 36, 36, 0.418);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+    max-width: 100px;
+    border: rgb(24, 24, 24) 1px solid;
+    border-radius: 10%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.generalBtn:hover {
+    background-color: rgba(36, 36, 36, 0.774);
+}
+
+.generalBtn:active {
+    background-color: rgba(24, 51, 37, 0.774);
+    border: white 1px solid;
 }
