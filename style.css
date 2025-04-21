@@ -67,7 +67,7 @@ body {
 .contentBox {
     justify-self: center;
     border: 3px green solid;
-    max-width: 45%;
+    max-width: 55%;
     padding-left: 8px;
     padding-right: 8px;
     color: white;
@@ -148,7 +148,47 @@ img{
     cursor: pointer;
 }
 
+.selfactionBox {
+    justify-self: center;
+    border: 3px green solid;
+    max-width: 65%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 8px;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
 
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(48, 133, 48);
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+p4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+p5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-shadow: 1.5px 1.5px black;
+    align-self: center;
+}
+
+.profileImg {
+    position: absolute;
+    max-width: 60px;
+    max-height: 80px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 7px;
+}
 
 #genderChoice {
     display: flex;
