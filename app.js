@@ -1,3 +1,4 @@
+let currentView = 1;
 show();
 function show() {
     let html = '';

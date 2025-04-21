@@ -1,4 +1,3 @@
-let currentView = 1;
 const model = {
     app: {
     },
@@ -25,7 +24,7 @@ const model = {
 <div class="generalBtn" onclick="chooseGender(0)">Masculine</div>
 <div class="generalBtn" onclick="chooseGender(1)">Feminine</div>
 </div>
-<div class="factionInfo"><h3>Faction: ${selFaction}</h3> <br> Description: ${selFactionDesc} <br> Locations: ${selFactionLoc}
+<div class="factionInfo">${factionData}
 </div>
 </div>` },
             {

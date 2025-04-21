@@ -17,7 +17,11 @@ function selectFaction(entry) {
     selFaction = fact[entry].name;
     selFactionDesc = fact[entry].description;
     selFactionLoc = fact[entry].locations;
-    factionData = /*HTML*/ `<h2>Faction: ${selFaction}</h2> <br> <p>Description: ${selFactionDesc}</p> <br> <p>Locations: ${selFactionLoc}</p>`;
-    console.log(factionData)
+    factionData += /*HTML*/ `<h2>Faction: ${selFaction}</h2> <br> <p>Description: ${selFactionDesc}</p> <br> <p>Locations: ${selFactionLoc}</p>`;
+    console.log(factionData);
     show();
+}
+
+function factionDataShow() {
+    return factionData;
 }
