@@ -93,18 +93,20 @@ body {
 }
 
 #factionbox {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .factionchoice{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .choiceImg {
     position: relative;
-    max-width: 100px;
+    max-width: 120px;
     max-height: 120px;
     opacity: 0.5;
     -webkit-filter: grayscale(100%);
@@ -124,7 +126,7 @@ body {
 }
 
 img{
-    width: 100%;
+
     display: block;
     margin:auto;
 }
@@ -188,6 +190,25 @@ p5 {
     float: left;
     margin-top: 12px;
     margin-left: 7px;
+}
+
+.enemiesBox {
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    border: 3px green solid;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 65%;
+    padding: 8px;
+    margin: 8px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.enemyImg {
+    margin: 3px;
+    user-select: none;
 }
 
 #genderChoice {
