@@ -37,6 +37,8 @@ function selectFaction(entry) {
     const fact = model.data.factions;
     const input = model.inputs;
     const enemies = model.data.factions[entry].enemies;
+    input.pickedFaction = '';
+    input.pickedFaction = entry;
     let tempEnemyList = '';
     let tempEnemyNum = 0;
     for(let i = 0; i < enemies.length; i++) {

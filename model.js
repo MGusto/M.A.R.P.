@@ -8,6 +8,7 @@ const model = {
         ]
     },
     inputs: {
+        pickedFaction: '',
         selFaction: '',
         selFactionDesc: '',
         selFactionLoc: '',
