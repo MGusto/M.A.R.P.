@@ -94,8 +94,8 @@ body {
 }
 
 #namegenView {
-    min-width: 760px;
-    min-height: 690px;
+    min-width: 720px;
+    min-height: 600px;
 }
 
 #generatorBox {
@@ -107,22 +107,32 @@ body {
 }
 
 #factionbox {
-    display: grid;
-    margin: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
     height: 75%;
     max-height: 550px;
     width: 350px;
-    gap: 15px;
+}
+
+.flexcolumn {
+    display: flex;
+    flex: 33%;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .factionchoice {
     display: flex;
     justify-content: center;
+    height: 120px;
+    width: 120px;
     align-items: center;
 }
 
 .choiceImg {
+    flex-shrink: 4;
     position: relative;
     max-width: 120px;
     max-height: 120px;
@@ -172,7 +182,7 @@ img {
     display: flex;
     flex-direction: column;
     border: 3px green solid;
-    max-width: 85%;
+    max-width: 80%;
     max-height: 70%;
     padding-left: 8px;
     padding-right: 8px;

@@ -4,18 +4,22 @@ function nameGenView() {
     ${model.inputs.hasUserPickedFaction ? '' : `<h4>Choose the faction you want to play!</h4>`}
     <div id="generatorBox">
     <div id="factionbox">
+    <div class="flexcolumn">
     <div class ="factionchoice"><img class="choiceImg" src="./img/Loner.png" width="100px" height="100px" onclick="selectFaction(0)"><div class="imgDesc">LONERS</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/Bandits.png" width="100px" height="120px" onclick="selectFaction(1)"><div class="imgDesc">BANDITS</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/ClearSky.png" width="100px" height="120px" onclick="selectFaction(2)"><div class="imgDesc">CLEAR SKY</div></div>
     <div class ="factionchoice"><img class="choiceImg" src="./img/Duty.png" width="100px" height="100px" onclick="selectFaction(3)"><div class="imgDesc">DUTY</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/Freedom.png" width="100px" height="100px" onclick="selectFaction(4)"><div class="imgDesc">FREEDOM</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/Mercenary.png" width="100px" height="100px" onclick="selectFaction(5)"><div class="imgDesc">MERCENARY</div></div>
     <div class ="factionchoice"><img class="choiceImg" src="./img/Army.png" width="100px" height="100px" onclick="selectFaction(6)"><div class="imgDesc">MILITARY</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/Monolith.png" width="100px" height="100px" onclick="selectFaction(7)"><div class="imgDesc">MONOLITH</div></div>
-    <div class ="factionchoice"><img class="choiceImg" src="./img/Ecologists.png" width="100px" height="100px" onclick="selectFaction(8)"><div class="imgDesc">ECOLOGISTS</div></div>
     <div class ="factionchoice"><img class="choiceImg" src="./img/Renegade.png" width="90px" height="90px" onclick="selectFaction(9)"><div class="imgDesc">RENEGADE</div></div>
+    </div><div class="flexcolumn">
+    <div class ="factionchoice"><img class="choiceImg" src="./img/Bandits.png" width="100px" height="120px" onclick="selectFaction(1)"><div class="imgDesc">BANDITS</div></div>
+    <div class ="factionchoice"><img class="choiceImg" src="./img/Freedom.png" width="100px" height="100px" onclick="selectFaction(4)"><div class="imgDesc">FREEDOM</div></div>
+    <div class ="factionchoice"><img class="choiceImg" src="./img/Monolith.png" width="100px" height="100px" onclick="selectFaction(7)"><div class="imgDesc">MONOLITH</div></div>
     <div class ="factionchoice"><img class="choiceImg" src="./img/SIN.png" width="85px" height="85px" onclick="selectFaction(10)"><div class="imgDesc">SIN</div></div>
+    </div><div class="flexcolumn">
+    <div class ="factionchoice"><img class="choiceImg" src="./img/ClearSky.png" width="100px" height="120px" onclick="selectFaction(2)"><div class="imgDesc">CLEAR SKY</div></div>
+    <div class ="factionchoice"><img class="choiceImg" src="./img/Mercenary.png" width="100px" height="100px" onclick="selectFaction(5)"><div class="imgDesc">MERCENARY</div></div>
+    <div class ="factionchoice"><img class="choiceImg" src="./img/Ecologists.png" width="100px" height="100px" onclick="selectFaction(8)"><div class="imgDesc">ECOLOGISTS</div></div>
     <div class ="factionchoice"><img class="choiceImg" src="./img/UNISG.png" width="100px" height="100px" onclick="selectFaction(11)"><div class="imgDesc">UNISG</div></div>
+    </div>
     </div>
     ${model.inputs.hasUserPickedFaction ? `${model.inputs.factionData}` : ''}</div></div>
     ${model.inputs.hasUserPickedFaction ? `<div id="genderChoice" class="contentBox">
