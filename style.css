@@ -67,7 +67,7 @@ body {
 .contentBox {
     justify-self: center;
     border: 3px green solid;
-    max-width: 55%;
+    max-width: 65%;
     padding-left: 8px;
     padding-right: 8px;
     color: white;
@@ -92,10 +92,22 @@ body {
     user-select: none;
 }
 
+#generatorBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    width: 100%;
+    max-height: 580px;
+}
+
 #factionbox {
     display: grid;
+    margin: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    height: 75%;
+    max-height: 550px;
+    width: 350px;
+    gap: 15px;
 }
 
 .factionchoice{
@@ -153,7 +165,8 @@ img{
 .selfactionBox {
     justify-self: center;
     border: 3px green solid;
-    max-width: 65%;
+    max-width: 85%;
+    max-height: 600px;
     padding-left: 8px;
     padding-right: 8px;
     margin: 8px;
@@ -199,7 +212,8 @@ p5 {
     border: 3px green solid;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 65%;
+    max-width: 90%;
+    max-height: 20%;
     padding: 8px;
     margin: 8px;
     color: white;
@@ -207,6 +221,8 @@ p5 {
 }
 
 .enemyImg {
+    max-width: 45px;
+    max-height: 50px;
     margin: 3px;
     user-select: none;
 }
