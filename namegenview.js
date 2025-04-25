@@ -46,7 +46,7 @@ function selectFaction(entry) {
     }
     input.hasUserPickedFaction = true;
     input.factionData = '';
-    input.factionData = /*HTML*/ `<div class = "selfactionBox"><img class="profileImg" src=${fact[entry].icon}><h4>${fact[entry].name}</h4><br><p4>${fact[entry].description}</p4><br><br><p4>Location(s): ${fact[entry].locations}</p4><br><br><h4>Enemies:</h4> <div class="enemiesBox">${tempEnemyList}</div></div>`;
+    input.factionData = /*HTML*/ `<div class = "selfactionBox"><img class="profileImg" src=${fact[entry].icon}><h4>${fact[entry].name}</h4><br><p4>${fact[entry].description}</p4><br><p4>Location(s): ${fact[entry].locations}</p4><br><br><h4>Enemies:</h4> <div class="enemiesBox">${tempEnemyList}</div></div>`;
     console.log(input.factionData);
     updateView();
 }

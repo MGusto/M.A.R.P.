@@ -13,6 +13,7 @@
 body {
     background-color: rgb(22, 22, 22);
 }
+
 .headerBox {
     justify-self: center;
     padding-left: 5px;
@@ -115,8 +116,8 @@ body {
     gap: 15px;
 }
 
-.factionchoice{
-    display:flex;
+.factionchoice {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +133,7 @@ body {
     border: 1px rgba(0, 0, 0, 0) solid;
 }
 
-.choiceImg:hover{
+.choiceImg:hover {
     opacity: 1;
     -webkit-filter: grayscale(0%);
 }
@@ -142,10 +143,10 @@ body {
     border: 1px rgba(255, 255, 255, 0.514) solid;
 }
 
-img{
+img {
 
     display: block;
-    margin:auto;
+    margin: auto;
 }
 
 .imgDesc {
@@ -154,7 +155,7 @@ img{
     -webkit-text-stroke-color: black;
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.164);
     font-family: 'Courier New', Courier, monospace;
-    font-weight:bolder;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,10 +169,11 @@ img{
 }
 
 .selfactionBox {
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
     border: 3px green solid;
     max-width: 85%;
-    max-height: 450px;
+    max-height: 70%;
     padding-left: 8px;
     padding-right: 8px;
     margin: 8px;
@@ -213,14 +215,15 @@ p5 {
 .enemiesBox {
     display: flex;
     justify-self: center;
-    align-content: center;
+    align-self: center;
     border: 3px green solid;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: row;
     max-width: 90%;
-    max-height: 20%;
-    padding: 8px;
-    margin: 8px;
+    max-height: 40%;
+    padding: 5px;
+    margin-bottom: 8px;
     color: white;
     background-color: rgb(34, 34, 34);
 }
