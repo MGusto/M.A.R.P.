@@ -92,6 +92,11 @@ body {
     user-select: none;
 }
 
+#namegenView {
+    min-width: 760px;
+    min-height: 690px;
+}
+
 #generatorBox {
     display: flex;
     justify-content: center;
@@ -166,7 +171,7 @@ img{
     justify-self: center;
     border: 3px green solid;
     max-width: 85%;
-    max-height: 600px;
+    max-height: 450px;
     padding-left: 8px;
     padding-right: 8px;
     margin: 8px;
