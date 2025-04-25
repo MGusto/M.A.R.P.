@@ -14,6 +14,7 @@ const model = {
         selFactionLoc: '',
         factionData: '',
         hasUserPickedFaction: false,
+        hasUserPickedGender: false,
     },
     data: {
         factions: [

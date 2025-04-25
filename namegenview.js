@@ -21,13 +21,15 @@ function nameGenView() {
     <div class ="factionchoice"><img class="choiceImg" src="./img/UNISG.png" width="100px" height="100px" onclick="selectFaction(11)"><div class="imgDesc">UNISG</div></div>
     </div>
     </div>
-    ${model.inputs.hasUserPickedFaction ? `${model.inputs.factionData}` : ''}</div></div>
-    ${model.inputs.hasUserPickedFaction ? `<div id="genderChoice" class="contentBox">
-    <div class="generalBtn" onclick="chooseGender(0)">Masculine</div>
-    <div class="generalBtn" onclick="chooseGender(1)">Feminine</div>
+    ${model.inputs.hasUserPickedFaction ? `${model.inputs.factionData}` : ''}</div>${model.inputs.hasUserPickedFaction ? /*HTML*/ `<div id="genderChoice" class="contentBox">
+        <div class="generalBtn" onclick="chooseGender(0)">Masculine</div>
+        <div class="generalBtn" onclick="chooseGender(1)">Feminine</div>
+        </div>` : ''}</div>
+    ${model.inputs.hasUserPickedGender ? /*HTML*/ `<div id="generateNamesBox" class="contentBox">
+    <div class="largeBtn" onclick="generateNames()">Generate Names</div>
     </div>` : ''}
     `
-    }
+}
 
 function checkFaction(faction) {
     hoveredfaction = '';
@@ -44,7 +46,7 @@ function selectFaction(entry) {
     input.pickedFaction = entry;
     let tempEnemyList = '';
     let tempEnemyNum = 0;
-    for(let i = 0; i < enemies.length; i++) {
+    for (let i = 0; i < enemies.length; i++) {
         tempEnemyNum = enemies[i];
         tempEnemyList += /*HTML*/ `<img class="enemyImg" src="${fact[tempEnemyNum].icon}" ${fact[tempEnemyNum].enicopx} alt="${fact[tempEnemyNum].name}"> `;
     }
@@ -52,5 +54,11 @@ function selectFaction(entry) {
     input.factionData = '';
     input.factionData = /*HTML*/ `<div class = "selfactionBox"><img class="profileImg" src=${fact[entry].icon}><h4>${fact[entry].name}</h4><br><p4>${fact[entry].description}</p4><br><p4>Location(s): ${fact[entry].locations}</p4><br><br><h4>Enemies:</h4> <div class="enemiesBox">${tempEnemyList}</div></div>`;
     console.log(input.factionData);
+    updateView();
+}
+
+function chooseGender(gender) {
+    const input = model.inputs;
+    input.hasUserPickedGender = true;
     updateView();
 }

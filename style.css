@@ -268,6 +268,21 @@ p5 {
     cursor: pointer;
 }
 
+.largeBtn {
+    background-color: rgba(36, 36, 36, 0.418);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+    max-width: 100px;
+    border: rgb(24, 24, 24) 1px solid;
+    border-radius: 10%;
+    user-select: none;
+    cursor: pointer;
+}
+
 .generalBtn:hover {
     background-color: rgba(36, 36, 36, 0.774);
 }
