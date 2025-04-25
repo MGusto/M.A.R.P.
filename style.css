@@ -93,8 +93,8 @@ body {
 }
 
 #generatorBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     height: 80%;
     width: 100%;
     max-height: 580px;
