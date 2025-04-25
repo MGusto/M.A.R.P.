@@ -1,7 +1,7 @@
 function nameGenView() {
     return /*HTML*/ `<div class="contentBox" id="namegenView">
     <p>Name & Faction Generator feature is WIP. Most of the names are sourced from Grulag's <a class="hyperlink" href="https://www.moddb.com/mods/stalker-anomaly/addons/anomalys-name-update-for-stalkers-anus" target="_blank">"Anomaly's Name Update for Stalkers"<a>.</p>
-    <h3>Choose the faction you want to play!</h3>
+    ${model.inputs.hasUserPickedFaction ? '' : `<h4>Choose the faction you want to play!</h4>`}
     <div id="generatorBox">
     <div id="factionbox">
     <div class ="factionchoice"><img class="choiceImg" src="./img/Loner.png" width="100px" height="100px" onclick="selectFaction(0)"><div class="imgDesc">LONERS</div></div>
