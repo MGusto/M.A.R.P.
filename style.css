@@ -68,7 +68,7 @@ body {
 .contentBox {
     justify-self: center;
     border: 3px green solid;
-    max-width: 65%;
+    max-width: 55%;
     padding-left: 8px;
     padding-right: 8px;
     color: white;
@@ -141,14 +141,16 @@ body {
     user-select: none;
     cursor: pointer;
     border: 1px rgba(0, 0, 0, 0) solid;
+    transition: all 0.3s ease;
 }
 
-.choiceImgSel {
+.choiceImg.selected {
     flex-shrink: 4;
     position: relative;
     max-width: 120px;
     max-height: 120px;
     opacity: 1;
+    -webkit-filter: grayscale(0%);
     user-select: none;
     cursor: pointer;
     border: 1px rgba(0, 0, 0, 0) solid;
@@ -193,8 +195,8 @@ img {
     display: flex;
     flex-direction: column;
     border: 3px green solid;
-    max-width: 80%;
-    max-height: 70%;
+    max-width: 40%;
+    max-height: 80%;
     padding-left: 8px;
     padding-right: 8px;
     margin: 8px;
